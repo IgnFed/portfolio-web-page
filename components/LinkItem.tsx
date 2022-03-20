@@ -1,7 +1,6 @@
 import NextLink from "next/link";
 import { Link, useColorModeValue } from "@chakra-ui/react";
 import { ILink } from "@/models/components/Navigation";
-import { HTMLAttributes } from "react";
 
 export const LinkItem = <Props extends ILink>(
   {
