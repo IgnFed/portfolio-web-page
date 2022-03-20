@@ -11,13 +11,13 @@ export const Layout = <Props extends IMainLayout>(
 ) => {
 
   return (
-    <Box as="main" pb={'8 0'} >
+    <Box as="main">
       <Head >
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <title>Ignacio Fedorenco - Homepage</title>
       </Head>
       <Navigation href={currRoute} />
-      <Container maxW={'container.md'} pt={14}>{children}</Container>
+      <Container maxW={'container.md'} mb={'2rem'} pt={14}>{children}</Container>
     </Box>
   )
 
