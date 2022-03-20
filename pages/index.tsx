@@ -2,7 +2,7 @@ import { IParagraph } from "@/models/pages/paragraphSection";
 import { BioYear } from "@/pages/Bio";
 import { Layout } from "@/pages/Layout/article";
 import { P } from "@/pages/P"
-import { Box, Heading, Container, Button } from "@chakra-ui/react"
+import { Box, Heading, Button } from "@chakra-ui/react"
 import NextLink from 'next/link'
 import { Image } from '@/utils/next-image-to-chakra'
 
@@ -51,8 +51,6 @@ export default function Home() {
 
   return (
     <Layout>
-      <Container mt={4}>
-
         <Box as='section' textAlign={'center'} justifyContent='center' display='flex' flexWrap={'wrap'} gap={3}>
           <Box>
             <Heading as='h2'>Ignacio Fedorenco</Heading>
@@ -104,7 +102,6 @@ export default function Home() {
             </Button>
           </NextLink>
         </Box>
-      </Container>
     </Layout>
   )
 }
