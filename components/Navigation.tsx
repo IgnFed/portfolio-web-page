@@ -28,8 +28,8 @@ export const Navigation = <Props extends INavigation>(
       as='nav'
       zIndex={1}
       w='100%'
-      backgroundColor={'#333333bb'}
-      css={{ackdropFilter: 'blur(10px)'}}
+      backgroundColor={'#0c0a16dd'}
+      css={{ backdropFilter: 'blur(30px)', WebkitBackdropFilter: 'blur(30px' }}
     >
       <Container
         p={2}
@@ -72,8 +72,12 @@ export const Navigation = <Props extends INavigation>(
                 variant={'outline'}
               />
               <MenuList>
-                <MenuItem>Home</MenuItem>
-                <MenuItem>Projects</MenuItem>
+                <MenuItem>
+                <LinkItem href='/' options={{css:{padding:0, width:'100%'}}} >Home</LinkItem>
+                </MenuItem>
+                <MenuItem>
+                  <LinkItem href='/projects' options={{css:{padding:0, width:'100%'}}} >Projects</LinkItem>
+                </MenuItem>
               </MenuList>
             </Menu>
           </Box>

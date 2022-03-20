@@ -2,14 +2,13 @@ import NextLink from "next/link";
 import { Link, useColorModeValue } from "@chakra-ui/react";
 import { ILink } from "@/models/components/Navigation";
 import { HTMLAttributes } from "react";
-import { mode } from "@/utils/mode";
 
 export const LinkItem = <Props extends ILink>(
   {
     children,
     href,
     currRef,
-    options={} as HTMLAttributes<HTMLAnchorElement>
+    options
   }: Props
 )=>{
   const isActive = currRef === href
@@ -25,6 +24,7 @@ export const LinkItem = <Props extends ILink>(
           color: !isActive ? useColorModeValue('#333', '#666') : '#fff',
           borderRadius: isActive ? '1rem' : undefined
         }}
+        {...options || {}}
       >
         {children}
       </Link>  
