@@ -46,9 +46,9 @@ const ParagraphSection = <Props extends IParagraph>(
     title,
   }: Props
 ) => (
-  <Box as='section' mt={5}>
+  <Box as='section' mt={5} w='100%'>
     <Heading as={'h3'} variant='underline'>{title}</Heading>
-    <P variant='underline'>{children}</P>
+    <P>{children}</P>
   </Box>
 )
 
@@ -58,40 +58,53 @@ export default function Home() {
     <Layout>
       <Container mt={4}>
 
-        <Box as='section' textAlign={'center'} display='flex' gap={3}>
+        <Box as='section' textAlign={'center'} justifyContent='center' display='flex' flexWrap={'wrap'} gap={3}>
           <Box>
             <Heading as='h2'>Ignacio Fedorenco</Heading>
             Desarrollador Full Stack con JavaScript.
           </Box>
           <ImageProfile src='/perfil.png' />
         </Box>
-        <ParagraphSection title='About Me'>
 
+        <ParagraphSection title='Sobre Mí'>
+          Tengo 21 años y estoy actualmente en una
+          busqueda de empleo.
+
+          Aproveché el tiempo que tuve para inmiscuirme a través del auto estudio
+          en el mundo de la programación. Principalmente programación Web.
+
+          Estuve cursando una carrera universitaria de programación, pero debido
+          ya que no me sentía cómodo con las clases virtuales, terminé
+          pausándola. A futuro, tengo la intención de volver a retomarla.
+          Quisiera especializarme en ser un fullstack que trabaje con ReactJS
+          (aunque no soy reacio a aprender otra librería o framework) por lo que
+          las principales tecnologías que manejo son HTML, CSS y JavaScript para
+          el frontend y NodeJS para el backend.
+          Puedo implementar Typescript para un proyecto más trabajado y
+          robusto.
         </ParagraphSection>
+
         <ParagraphSection title='Biography'>
-          <Box>
-            <BioYear>2018</BioYear>
-            Título Secundario: Bachiller en Economía y Administración - Institución: E.E.S.O. N° 429 “Mario Vecchioli” -
-            Rafaela - Santa Fe
-          </Box>
-          <Box>
-            <BioYear>2020</BioYear>
-            Empiezo con la programación de manera auto didacta.
-          </Box>
-          <Box>
-            <BioYear>2021</BioYear>
-            Seminario: Argentina Programa: #SéPrograma - Ministerio de Desarrollo Productivo Argentina -
-            cessi ArgenTina ( 12 de octubre del 2021 - 30 de diciembre del 2021 )
-          </Box>
+          <BioYear>2018</BioYear>
+          Título Secundario: Bachiller en Economía y Administración - Institución: E.E.S.O. N° 429 “Mario Vecchioli” -
+          Rafaela - Santa Fe
+          <br />
+          <BioYear>2020</BioYear>
+          Empiezo con la programación de manera auto didacta.
+
+          <br />
+          <BioYear>2021</BioYear>
+          Seminario: Argentina Programa: #SéProgramar - Ministerio de Desarrollo Productivo Argentina -
+          cessi ArgenTina ( 12 de octubre del 2021 - 30 de diciembre del 2021 )
         </ParagraphSection>
 
         <ParagraphSection title='Mis Hobbies ❤🎶💕'>
           Anime, Manga, Novelas Ligeras, Dormir y Comer (y obviamente, programar).
         </ParagraphSection>
 
-        <Box mt={8} align='center'>
-          <NextLink  href='/projects'>
-            <Button colorScheme='yellow'>
+        <Box mt={8} alignContent='center'>
+          <NextLink href='/projects'>
+            <Button colorScheme='yellow' whiteSpace={'break-spaces'}>
               Dale un vistazo a mis proyectos!!!
             </Button>
           </NextLink>
