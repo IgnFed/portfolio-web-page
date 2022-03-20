@@ -2,14 +2,9 @@ import { IParagraph } from "@/models/pages/paragraphSection";
 import { BioYear } from "@/pages/Bio";
 import { Layout } from "@/pages/Layout/article";
 import { P } from "@/pages/P"
-import { chakra, Box, Heading, Container, Button } from "@chakra-ui/react"
-import NextImage from 'next/image'
+import { Box, Heading, Container, Button } from "@chakra-ui/react"
 import NextLink from 'next/link'
-
-const Image = chakra(NextImage, {
-  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
-}
-)
+import { Image } from '@/utils/next-image-to-chakra'
 
 export const ImageProfile = (
   {
