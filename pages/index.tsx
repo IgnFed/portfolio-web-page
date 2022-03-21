@@ -4,7 +4,7 @@ import { Layout } from "@/pages/Layout/article";
 import { P } from "@/pages/P"
 import { Box, Heading, Button } from "@chakra-ui/react"
 import NextLink from 'next/link'
-import { Image } from '@/utils/next-image-to-chakra'
+import { Image } from '@chakra-ui/react'
 
 export const ImageProfile = (
   {
@@ -14,17 +14,17 @@ export const ImageProfile = (
 
   return (
     <Box
-      w='100px'
-      height='100px'
+      w='250px'
+      h='250px'
       borderRadius='full'
       border='2px solid'
       borderColor='whiteAlpha.600'
     >
       <Image
         src={src}
-        width='125%'
-        height='125%'
-        border={'1px solid red'}
+        width='100%'
+        height='100%'
+        objectFit={'cover'}
         borderRadius='full'
         decoding='async'
         loading="lazy"
@@ -51,12 +51,12 @@ export default function Home() {
 
   return (
     <Layout>
-        <Box as='section' textAlign={'center'} justifyContent='center' display='flex' flexWrap={'wrap'} gap={3}>
+        <Box as='section' textAlign={'center'} display='grid' placeItems='center' gap='2rem'>
           <Box>
             <Heading as='h2'>Ignacio Fedorenco</Heading>
             Desarrollador Full Stack con JavaScript.
           </Box>
-          <ImageProfile src='/perfil.png' />
+          <ImageProfile src='/profile.png' />
         </Box>
 
         <ParagraphSection title='Sobre Mí'>
