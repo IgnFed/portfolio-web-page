@@ -13,8 +13,8 @@ export const Layout = <Props extends IMainLayout>(
   return (
     <Box as="main">
       <Head >
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="/temp_ico.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/temp_ico.png" />
         <meta lang='es' />
         <meta property="og:site_name" content="Ignacio Fedorenco Index" />
         <meta property="og:description" content="Ignacio's Fedorenco Webpage" />
@@ -26,19 +26,19 @@ export const Layout = <Props extends IMainLayout>(
         <meta property="twitter:creator" content="@IgnFedor" /> */}
 
         {/* //Facebook Meta */}
-        <meta property="og:url" content="https://www.github.com/IgnFed/" />
+        <meta property="og:url" content="https://ignfed.vercel.app/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="IgnFed - Overview" />
-        <meta property="og:description" content="IgnFed Repository(42)." />
-        <meta property="og:image" content="https://avatars.githubusercontent.com/u/70576040?v=4?s=400" />
+        <meta property="og:title" content="IgnFed - Portfolio" />
+        <meta property="og:description" content="My own Portfolio where i shared some of my projects and tell you about me." />
+        <meta property="og:image" content="/temp_ico.png" />
 
         {/* //Twitter Meta */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="github.com" />
-        <meta property="twitter:url" content="https://www.github.com/IgnFed/" />
-        <meta name="twitter:title" content="IgnFed - Overview" />
-        <meta name="twitter:description" content="IgnFed Repository(42)." />
-        <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/70576040?v=4?s=400" />
+        <meta property="twitter:url" content="https://ignfed.vercel.app/" />
+        <meta name="twitter:title" content="IgnFed - Portfolio" />
+        <meta name="twitter:description" content="My own Portfolio where i shared some of my projects and tell you about me." />
+        <meta name="twitter:image" content="/temp_ico.png" />
 
         <meta name="description" content="Ignacio's Fedoenco Homepage" />
         <meta name='Author' content='Ignacio Fedorenco' />
