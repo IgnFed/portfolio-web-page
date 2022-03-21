@@ -11,7 +11,7 @@ export const LinkItem = <Props extends ILink>(
   }: Props
 )=>{
   const isActive = currRef === href
-
+  const color = useColorModeValue('#333', '#666')
   return(
     <NextLink href={href} passHref>
       <Link
@@ -20,7 +20,7 @@ export const LinkItem = <Props extends ILink>(
         p={'0 1.5rem'}
         css={{
           backgroundColor: isActive ? '#444' : undefined,
-          color: !isActive ? useColorModeValue('#333', '#666') : '#fff',
+          color: !isActive ? color : "#fff",
           borderRadius: isActive ? '1rem' : undefined
         }}
         {...options || {}}
