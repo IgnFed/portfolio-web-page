@@ -1,8 +1,8 @@
 {
   "extends": "next/core-web-vitals",
   "rules": {
-    "comma-dangle": "warn",
-    "space-before-function-paren": "warn",
-    "arrow-parens": "warn",
+    "comma-dangle": "off",
+    "space-before-function-paren": "off",
+    "arrow-parens": "off"
   }
 }
