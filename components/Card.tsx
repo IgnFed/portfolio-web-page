@@ -1,31 +1,25 @@
 import { motion } from "framer-motion"
 import { Image } from "@chakra-ui/react"
-import convert from '@/utils/chakra-convert'
 import { ICard } from "@/models/components/Card"
 
-const Box = convert(motion.div)
-const IMAGE_DIMENSIONS = {
-  width: '100%',
-  height: '250px'
-}
 const DEFAULT_ANIMATION_FRAMES = {
-    initial: { opacity: 0, x: -40 },
-    animate: { opacity: 1, x: 0 },
-} as ICard['animationFrames']
+  initial: { opacity: 0, x: -40 },
+  animate: { opacity: 1, x: 0 },
+}
 
 export const Card = <Props extends ICard>(
   {
-    animationDelay = .2 ,
-    animationFrames = DEFAULT_ANIMATION_FRAMES,
+    animationDelay = .2,
     imageUrl
   }: Props
 ) => {
 
   return (
-    <Box
-      w={IMAGE_DIMENSIONS.width}
-      h={IMAGE_DIMENSIONS.height}
-      {...animationFrames || {}}
+    <motion.div
+      style={{ width: '100%', height: '250px' }}
+      initial='initial'
+      animate='animate'
+      variants={DEFAULT_ANIMATION_FRAMES}
       transition={{ type: 'spring', delay: animationDelay }}
     >
       <Image
@@ -36,8 +30,8 @@ export const Card = <Props extends ICard>(
         height={'inherit'}
         loading={'lazy'}
         decoding={'async'}
-        // objectFit={'contain'}
+      // objectFit={'contain'}
       />
-    </Box>
+    </motion.div>
   )
 }

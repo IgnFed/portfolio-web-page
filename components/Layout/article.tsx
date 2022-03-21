@@ -1,10 +1,7 @@
 import { ILayout } from "@/models/components/Layout/article"
-import converToChakraElement from "@/utils/chakra-convert"
-import { Container } from "@chakra-ui/react"
+import { chakra, Container, shouldForwardProp } from "@chakra-ui/react"
 import { motion } from "framer-motion"
 import Head from "next/head"
-
-const Section = converToChakraElement(motion.article)
 
 export const Layout = <Props extends ILayout>(
   {
@@ -15,7 +12,7 @@ export const Layout = <Props extends ILayout>(
 ) => {
 
   return (
-    <Section
+    <motion.article
       initial={{ y: -10, opacity: 0 }}
       animate={{ y: 10, opacity: 1 }}
       transition={{ type: 'spring', delay }}
@@ -24,6 +21,6 @@ export const Layout = <Props extends ILayout>(
       <Container mt={4}>
         {children}
       </Container>
-    </Section>
+    </motion.article>
   )
 }
