@@ -21,10 +21,8 @@ export const ToggleThemeButton = () => {
           height="45px"
           border-radius="1rem"
           onClick={() => toggleColorMode()}
-          display={"flex"}
-          alignItems='center'
-          justifyContent='center'
-
+          _hover={{}}
+          _active={{}}
         >
           <Icon
             color={useColorModeValue('purple', 'orange')}
