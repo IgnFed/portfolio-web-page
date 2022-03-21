@@ -1,5 +1,4 @@
 import { ChakraProps } from "@chakra-ui/react";
-import { HTMLAttributes } from "react";
 import IBaseProps from "./IBaseProps";
 
 export interface ILink extends IBaseProps{
