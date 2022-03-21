@@ -8,13 +8,11 @@ export default function Projects() {
 
   return (
     <Layout pageTitle="Projects" >
-      <Heading mb={'.5rem'} as={'h2'} >
-        Projects
-      </Heading>
+      <Heading mb={'.5rem'} as={'h2'} >Projects</Heading>
       <SimpleGrid whiteSpace='nowrap' gridTemplateColumns={'repeat( auto-fit, minmax(calc(450px / 2), 1fr) )'} gap={4}>
 
         <GridItem>
-          <LinkItem href='/' options={{ display:'block', css: { color: '#fff', ":hover": { textDecoration: 'none', color: '#ccc' } }, p: 0 }}>
+          <LinkItem href='/projects/Multi-Steps-Form' options={{ display:'block', css: { color: 'witheAlpha.900', ":hover": { textDecoration: 'none', color: '#ccc' } }, p: 0 }}>
             <Heading as={'h4'} variant='underline'>
               <P>Form Multi Steps</P>
             </Heading>
@@ -23,7 +21,7 @@ export default function Projects() {
         </GridItem>
 
         <GridItem>
-          <LinkItem href='/' options={{ display:'block', css: { color: '#fff', ":hover": { textDecoration: 'none', color: '#ccc' } }, p: 0 }}>
+          <LinkItem href='/projects/Dropdown-Menu' options={{ display:'block', css: { color: 'witheAlpha.900', ":hover": { textDecoration: 'none', color: '#ccc' } }, p: 0 }}>
             <Heading as={'h4'} variant='underline'>
               <P>Dropdown Menu</P>
             </Heading>
@@ -32,7 +30,7 @@ export default function Projects() {
         </GridItem>
         
         <GridItem>
-          <LinkItem href='/' options={{ display:'block', css: { color: '#fff', ":hover": { textDecoration: 'none', color: '#ccc' } }, p: 0 }}>
+          <LinkItem href='/projects/Steps-Indicator' options={{ display:'block', css: { color: 'witheAlpha.900', ":hover": { textDecoration: 'none', color: '#ccc' } }, p: 0 }}>
             <Heading as={'h4'} variant='underline'>
               <P>Steps Indicator</P>
             </Heading>
@@ -41,11 +39,20 @@ export default function Projects() {
         </GridItem>
         
         <GridItem>
-          <LinkItem href='/' options={{ display:'block', css: { color: '#fff', ":hover": { textDecoration: 'none', color: '#ccc' } }, p: 0 }}>
+          <LinkItem href='/projects//Landing-Page' options={{ display:'block', css: { color: 'witheAlpha.900', ":hover": { textDecoration: 'none', color: '#ccc' } }, p: 0 }}>
             <Heading as={'h4'} variant='underline'>
               <P>Landing Page</P>
             </Heading>
             <Card imageUrl="/landing_page.png" />
+          </LinkItem>
+        </GridItem>
+        
+        <GridItem>
+          <LinkItem href='/projects/Basic-Local-Cloud' options={{ display:'block', css: { color: 'witheAlpha.900', ":hover": { textDecoration: 'none', color: '#ccc' } }, p: 0 }}>
+            <Heading as={'h4'} variant='underline'>
+              <P>Basic Local Cloud</P>
+            </Heading>
+            <Card imageUrl="/local_cloud.png" />
           </LinkItem>
         </GridItem>
         
