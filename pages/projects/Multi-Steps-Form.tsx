@@ -16,6 +16,8 @@ export default function MultiStepsForm() {
           w='100%'
           h='300px'
           borderRadius='1rem'
+          alt="Multi Steps Form Image"
+
         />
         <Flex as='section' w='100%' gap='1rem'>
           <LinkItem

@@ -30,7 +30,7 @@ export const Card = <Props extends ICard>(
         height={'inherit'}
         loading={'lazy'}
         decoding={'async'}
-      // objectFit={'contain'}
+        alt="Card Image"
       />
     </motion.div>
   )

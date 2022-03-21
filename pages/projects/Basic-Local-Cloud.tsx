@@ -15,6 +15,8 @@ export default function MultiStepsForm() {
           w='100%'
           h='300px'
           borderRadius='1rem'
+          alt="Basic Local Cloud Image"
+
         />
         <Flex as='section' w='100%' gap='1rem'>
 
