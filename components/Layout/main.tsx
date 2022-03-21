@@ -25,14 +25,14 @@ export const Layout = <Props extends IMainLayout>(
         <meta property="twitter:site" content="@IgnFedor" />
         <meta property="twitter:creator" content="@IgnFedor" /> */}
 
-        //Facebook Meta
+        {/* //Facebook Meta */}
         <meta property="og:url" content="https://www.github.com/IgnFed/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="IgnFed - Overview" />
         <meta property="og:description" content="IgnFed Repository(42)." />
         <meta property="og:image" content="https://avatars.githubusercontent.com/u/70576040?v=4?s=400" />
 
-        //Twitter Meta
+        {/* //Twitter Meta */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="github.com" />
         <meta property="twitter:url" content="https://www.github.com/IgnFed/" />
