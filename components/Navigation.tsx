@@ -10,7 +10,6 @@ import {
   IconButton,
   MenuList,
   Flex,
-  Icon,
 } from '@chakra-ui/react'
 import { GithubIcon } from './Icons/Github'
 import { LinkItem } from './LinkItem'
@@ -72,7 +71,7 @@ export const Navigation = <Props extends INavigation>(
             }}
           >
 
-            <GithubIcon w='35px' h='35px' />
+            <GithubIcon w='45px' h='45px' />
           </LinkItem>
           <Box
             display={{ base: 'flex', md: 'none' }}
