@@ -10,7 +10,9 @@ import {
   IconButton,
   MenuList,
   Flex,
+  Icon,
 } from '@chakra-ui/react'
+import { GithubIcon } from './Icons/Github'
 import { LinkItem } from './LinkItem'
 import { ToggleThemeButton } from './ToggleTheme'
 
@@ -55,15 +57,29 @@ export const Navigation = <Props extends INavigation>(
 
         <Flex
           flexGrow={1}
-          gap={'2rem'}
+          gap={'1rem'}
           justify='flex-end'
         >
           <ToggleThemeButton />
+          <LinkItem
+            href={'https://github.com/IgnFed/portfolio-web-page'}
+            options={{
+              p: 0,
+              referrerPolicy: 'no-referrer',
+              rel: 'nofollow',
+              ref: 'no-referrer',
+              target: '_blank'
+            }}
+          >
+
+            <GithubIcon w='35px' h='35px' />
+          </LinkItem>
           <Box
             display={{ base: 'flex', md: 'none' }}
             alignItems='center'
           >
             <Menu isLazy>
+
               <MenuButton
                 p='3'
                 as={IconButton}
@@ -71,12 +87,13 @@ export const Navigation = <Props extends INavigation>(
                 icon={<HamburgerIcon />}
                 variant={'outline'}
               />
+
               <MenuList>
                 <MenuItem>
-                <LinkItem href='/' options={{css:{padding:0, width:'100%'}}} >Home</LinkItem>
+                  <LinkItem href='/' options={{ css: { padding: 0, width: '100%' } }} >Home</LinkItem>
                 </MenuItem>
                 <MenuItem>
-                  <LinkItem href='/projects' options={{css:{padding:0, width:'100%'}}} >Projects</LinkItem>
+                  <LinkItem href='/projects' options={{ css: { padding: 0, width: '100%' } }} >Projects</LinkItem>
                 </MenuItem>
               </MenuList>
             </Menu>
