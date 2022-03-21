@@ -7,8 +7,8 @@ import { LinkItem } from "@/pages/LinkItem";
 export default function Projects() {
 
   return (
-    <Layout>
-      <Heading mb={'2rem'} as={'h2'} >
+    <Layout pageTitle="Projects" >
+      <Heading mb={'.5rem'} as={'h2'} >
         Projects
       </Heading>
       <SimpleGrid whiteSpace='nowrap' gridTemplateColumns={'repeat( auto-fit, minmax(calc(450px / 2), 1fr) )'} gap={4}>
