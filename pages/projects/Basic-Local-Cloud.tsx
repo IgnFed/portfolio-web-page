@@ -46,9 +46,6 @@ export default function MultiStepsForm() {
 
         <Flex as='section' wrap='wrap' w='100%' gap={3}>
           <Heading as='h6' fontSize='1rem'>
-            <Point>NextJS</Point>
-          </Heading>
-          <Heading as='h6' fontSize='1rem'>
             <Point>ReactJS</Point>
           </Heading>
           <Heading as='h6' fontSize='1rem'>
