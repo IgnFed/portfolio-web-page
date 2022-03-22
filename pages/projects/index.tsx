@@ -56,6 +56,15 @@ export default function Projects() {
           </LinkItem>
         </GridItem>
         
+        <GridItem>
+          <LinkItem href='/projects/Linked-List-Ts' options={{ display:'block', css: { color: 'witheAlpha.900', ":hover": { textDecoration: 'none', color: '#ccc' } }, p: 0 }}>
+            <Heading as={'h4'} variant='underline'>
+              <P>Basic Local Cloud</P>
+            </Heading>
+            <Card imageUrl="/ts_lined_lists.png" />
+          </LinkItem>
+        </GridItem>
+        
       </SimpleGrid>
     </Layout>
   )
