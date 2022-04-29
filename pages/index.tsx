@@ -56,7 +56,7 @@ export default function Home() {
           <Heading as='h2'>Ignacio Fedorenco</Heading>
           Desarrollador Full Stack con JavaScript.
         </Box>
-        <ImageProfile src='/profile.png' />
+        <ImageProfile src='/profile.jpeg' />
       </Box>
 
       <ParagraphSection title='Sobre Mí'>
