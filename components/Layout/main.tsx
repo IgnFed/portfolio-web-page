@@ -15,6 +15,7 @@ export const Layout = <Props extends IMainLayout>(
       <Head >
         <link rel="shortcut icon" href="/temp_ico.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/temp_ico.png" />
+        <meta name="google-site-verification" content="aKZyzoo-F5etEplQ63WkB7HLNS3mBVz1MuOwAlhZNCI" />
         <meta lang='es' />
         <meta property="og:site_name" content="Ignacio Fedorenco Index" />
         <meta property="og:description" content="Ignacio's Fedorenco Webpage" />
