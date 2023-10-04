@@ -60,7 +60,7 @@ export default function Home() {
       </Box>
 
       <ParagraphSection title='Sobre Mí'>
-        Tengo 21 años y estoy actualmente en una
+        Tengo 22 años y estoy actualmente en una
         busqueda de empleo.
 
         Aproveché el tiempo que tuve para inmiscuirme a través del auto estudio
